@@ -13,3 +13,6 @@ print("{0:.1f}".format(NUM/sum(W)))
 import numpy as np
 
 print(np.dot(X,W)/sum(W))
+
+#Another way to do this:
+np.average(X,None,W)
