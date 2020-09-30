@@ -8,3 +8,8 @@ for i in range(N):
     NUM = NUM + (X[i]*W[i])
 
 print("{0:.1f}".format(NUM/sum(W)))
+#______________________________________
+#Using Numpy
+import numpy as np
+
+print(np.dot(X,W)/sum(W))
