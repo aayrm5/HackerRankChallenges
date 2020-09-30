@@ -22,3 +22,15 @@ if max(counts) > 1:
     print(arr[counts.index(max(counts))])
 else:
     print(min(arr))
+    
+#____________________________________________
+#Alternatively you could simply use Python's bult-in libraries to calc it
+import numpy as np
+from scipy import stats 
+
+N = int(input().strip())
+arr = list(map(int,input().strip().split()))   
+
+print("{0:.1f}".format(np.mean(arr)))
+print("{0:.1f}".format(np.median(arr)))
+print(int(stats.mode(arr)[0]))
